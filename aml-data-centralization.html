@@ -1,13 +1,29 @@
 <svg width="1052" height="495" viewBox="0 0 1052 495" fill="none" xmlns="http://www.w3.org/2000/svg">
 <style>
   .connector-line {
-    stroke: #6aa7ff;
-    stroke-width: 0.8;
+    stroke: #334066;
+    stroke-width: 0.72;
     stroke-linecap: round;
-    stroke-dasharray: 18 22;
-    animation: connector-glow 3.5s ease-in-out infinite alternate;
-    filter: url(#connector-glow);
+    opacity: 0.85;
   }
+
+  .connector-glow-line {
+    stroke: url(#connector-glow-gradient);
+    stroke-width: 1.25;
+    stroke-linecap: round;
+    fill: none;
+    filter: url(#connector-glow);
+    animation-name: connector-glow;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  .connector-glow-line--1 { stroke-dasharray: 32 264; animation-duration: 4.1s; animation-delay: -0.4s; }
+  .connector-glow-line--2 { stroke-dasharray: 26 248; animation-duration: 4.9s; animation-delay: -1.5s; }
+  .connector-glow-line--3 { stroke-dasharray: 36 272; animation-duration: 4.4s; animation-delay: -2.2s; }
+  .connector-glow-line--4 { stroke-dasharray: 28 252; animation-duration: 5.2s; animation-delay: -0.8s; }
+  .connector-glow-line--5 { stroke-dasharray: 34 266; animation-duration: 4.6s; animation-delay: -3.1s; }
+  .connector-glow-line--6 { stroke-dasharray: 30 258; animation-duration: 5.0s; animation-delay: -2.0s; }
 
   .item-link {
     cursor: pointer;
@@ -31,14 +47,11 @@
   @keyframes connector-glow {
     0% {
       stroke-dashoffset: 0;
-      opacity: 0.35;
-    }
-    50% {
-      opacity: 0.9;
+      opacity: 0.95;
     }
     100% {
-      stroke-dashoffset: -80;
-      opacity: 0.5;
+      stroke-dashoffset: -296;
+      opacity: 0.95;
     }
   }
 </style>
@@ -140,11 +153,17 @@
 <path d="M601.729 317.442H723.712L767.271 383.529C816.73 383.529 814.47 383.529 863.928 383.529" stroke="#474D62" stroke-width="0.5"/>
 <path d="M605.689 291.56H756.386L778.081 325.205C821.965 325.205 822.975 324.713 866.859 324.713" stroke="#474D62" stroke-width="0.5"/>
 <path d="M595.971 184.665C613.074 184.665 661.995 184.665 679.098 184.665L751.95 88.2345L863.885 88.2346" class="connector-line"/>
+<path d="M595.971 184.665C613.074 184.665 661.995 184.665 679.098 184.665L751.95 88.2345L863.885 88.2346" class="connector-glow-line connector-glow-line--1"/>
 <path d="M604.682 211.377H718.993L768.732 147.876C818.19 147.876 817.423 148.046 866.881 148.046" class="connector-line"/>
+<path d="M604.682 211.377H718.993L768.732 147.876C818.19 147.876 817.423 148.046 866.881 148.046" class="connector-glow-line connector-glow-line--2"/>
 <path d="M608.645 237.259H759.342L782.87 206.436C826.754 206.436 825.93 206.436 869.814 206.436" class="connector-line"/>
+<path d="M608.645 237.259H759.342L782.87 206.436C826.754 206.436 825.93 206.436 869.814 206.436" class="connector-glow-line connector-glow-line--3"/>
 <path d="M608.91 265.564C703.096 265.564 870.388 265.564 870.388 265.564" class="connector-line"/>
+<path d="M608.91 265.564C703.096 265.564 870.388 265.564 870.388 265.564" class="connector-glow-line connector-glow-line--4"/>
 <path d="M601.729 317.442H723.712L767.271 383.529C816.73 383.529 814.47 383.529 863.928 383.529" class="connector-line"/>
+<path d="M601.729 317.442H723.712L767.271 383.529C816.73 383.529 814.47 383.529 863.928 383.529" class="connector-glow-line connector-glow-line--5"/>
 <path d="M605.689 291.56H756.386L778.081 325.205C821.965 325.205 822.975 324.713 866.859 324.713" class="connector-line"/>
+<path d="M605.689 291.56H756.386L778.081 325.205C821.965 325.205 822.975 324.713 866.859 324.713" class="connector-glow-line connector-glow-line--6"/>
 <rect x="635.158" y="181.907" width="5.625" height="5.625" rx="2" fill="#030A15" stroke="#474D62" stroke-width="0.5"/>
 <rect x="635.158" y="208.766" width="5.625" height="5.625" rx="2" fill="#030A15" stroke="#474D62" stroke-width="0.5"/>
 <rect x="635.158" y="234.528" width="5.625" height="5.625" rx="2" fill="#030A15" stroke="#474D62" stroke-width="0.5"/>
@@ -178,11 +197,17 @@
 <path d="M461.93 309.488H339.947L296.387 375.575C246.928 375.575 249.188 375.575 199.73 375.575" stroke="#474D62" stroke-width="0.5"/>
 <path d="M457.969 283.606H307.272L283.743 319.222C239.859 319.222 240.683 319.222 196.799 319.222" stroke="#474D62" stroke-width="0.5"/>
 <path d="M467.688 176.711C450.585 176.711 401.663 176.711 384.56 176.711L311.708 80.2805L199.774 80.2806" class="connector-line"/>
+<path d="M467.688 176.711C450.585 176.711 401.663 176.711 384.56 176.711L311.708 80.2805L199.774 80.2806" class="connector-glow-line connector-glow-line--1"/>
 <path d="M458.975 203.423H344.663L293.432 137.337C243.973 137.337 246.233 137.337 196.775 137.337" class="connector-line"/>
+<path d="M458.975 203.423H344.663L293.432 137.337C243.973 137.337 246.233 137.337 196.775 137.337" class="connector-glow-line connector-glow-line--2"/>
 <path d="M455.016 229.305H304.319L280.79 193.689C236.906 193.689 237.73 193.689 193.846 193.689" class="connector-line"/>
+<path d="M455.016 229.305H304.319L280.79 193.689C236.906 193.689 237.73 193.689 193.846 193.689" class="connector-glow-line connector-glow-line--3"/>
 <path d="M454.75 256.453C360.564 256.453 193.273 256.453 193.273 256.453" class="connector-line"/>
+<path d="M454.75 256.453C360.564 256.453 193.273 256.453 193.273 256.453" class="connector-glow-line connector-glow-line--4"/>
 <path d="M461.93 309.488H339.947L296.387 375.575C246.928 375.575 249.188 375.575 199.73 375.575" class="connector-line"/>
+<path d="M461.93 309.488H339.947L296.387 375.575C246.928 375.575 249.188 375.575 199.73 375.575" class="connector-glow-line connector-glow-line--5"/>
 <path d="M457.969 283.606H307.272L283.743 319.222C239.859 319.222 240.683 319.222 196.799 319.222" class="connector-line"/>
+<path d="M457.969 283.606H307.272L283.743 319.222C239.859 319.222 240.683 319.222 196.799 319.222" class="connector-glow-line connector-glow-line--6"/>
 <rect width="5.625" height="5.625" rx="2" transform="matrix(-1 0 0 1 428.494 173.953)" fill="#030A15" stroke="#474D62" stroke-width="0.5"/>
 <rect width="5.625" height="5.625" rx="2" transform="matrix(-1 0 0 1 428.494 200.812)" fill="#030A15" stroke="#474D62" stroke-width="0.5"/>
 <rect width="5.625" height="5.625" rx="2" transform="matrix(-1 0 0 1 428.494 226.574)" fill="#030A15" stroke="#474D62" stroke-width="0.5"/>
@@ -428,8 +453,18 @@
 <rect x="217.322" y="77.2845" width="8.59766" height="5.57373" rx="1.5" fill="url(#paint63_linear_12119_63355)" fill-opacity="0.2"/>
 <rect x="217.322" y="77.2845" width="8.59766" height="5.57373" rx="1.5" stroke="#474D62" stroke-width="0.5"/>
 <defs>
-<filter id="connector-glow" x="-50%" y="-50%" width="200%" height="200%" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feDropShadow dx="0" dy="0" stdDeviation="2.5" flood-color="#6aa7ff" flood-opacity="0.9"/>
+<linearGradient id="connector-gradient" x1="595" y1="247" x2="870" y2="247" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#2F3A5E"/>
+<stop offset="0.5" stop-color="#435483"/>
+<stop offset="1" stop-color="#2F3A5E"/>
+</linearGradient>
+<linearGradient id="connector-glow-gradient" x1="595" y1="247" x2="870" y2="247" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#38E8FF"/>
+<stop offset="1" stop-color="#1FD9FF"/>
+</linearGradient>
+<filter id="connector-glow" x="-50%" y="-50%" width="220%" height="220%" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feDropShadow dx="0" dy="0" stdDeviation="2.6" flood-color="#2FE6FF" flood-opacity="0.95"/>
+<feDropShadow dx="0" dy="0" stdDeviation="5.2" flood-color="#2FE6FF" flood-opacity="0.45"/>
 </filter>
 <filter id="filter0_f_12119_63355" x="266.227" y="2.28882e-05" width="526.966" height="494.377" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
